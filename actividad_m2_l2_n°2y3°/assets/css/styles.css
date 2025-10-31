@@ -1,0 +1,32 @@
+body{
+    background-color: lightblue;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
+
+article div{
+    text-align: center;
+    margin: auto;
+}
+
+article p{
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+section div {
+    text-align: center;
+}
+
+section h2{
+    text-align: center;
+}
