@@ -7,69 +7,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Iguana</title>
-    <script src="https://kit.fontawesome.com/8dd4c06a1f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
 
-<body>
+<body style="background-color: black;">
     <!-- Titulo e imagen de la iguana-->
     <header>
-        <h1 class="titulos">Iguanas</h1>
-        <img src="assets/img/bg-header.jpg" alt="">
+        <div class="container-fluid">
+            <h1 class="text-center link-light">Iguanas</h1>
+            <img src="assets/img/bg-header.jpg" alt="">
+        </div>
     </header>
     <!-- Parrafo e imagen al costado derecho -->
     <section class="primera-parte">
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut omnis, voluptatibus
-                reprehenderit enim minima sit assumenda eligendi laudantium totam fugit
-                itaque voluptatum doloremque numquam consequuntur, nulla eveniet expedita quidem!
-            </p>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque inventore voluptatum,
-                assumenda dolorem obcaecati mollitia corporis autem, impedit ab neque quae beatae consequatur!
-                Iste ea nisi harum, doloribus quisquam aspernatur.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis hic nostrum sapiente beatae
-                obcaecati, repellendus odio perspiciatis quisquam velit, earum culpa voluptatem! Delectus velit
-                repellat natus doloremque itaque debitis iusto.
-            </p>
-        </div>
-        <div>
-            <img src="assets/img/iguana-1.jpg" alt="Iguana del parrafo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 p-2 ">
+                    <p class="text-start link-light mt-5 ">La iguana es un reptil perteneciente a la familia Iguanadiae.
+                        Su
+                        tamaño esta entre los 15 cm hasta los 2 metros de largo y puede llegar a pesar unos 15kg. Cuando
+                        estan jóvenes tienen una coloracion con tonos verdes y al ir madurando predomina un color
+                        grisáceo con crestas o espinas en su espalda
+                    </p>
+                    <p class="text-start link-light ">
+                        La alimentación de la iguana va variando según su etapa de vida, pero la mayor parte de sus años
+                        son
+                        herbivoras. Viven en lugares tropicales con mucha vegetacion y es un animal que puede ser
+                        domesticado
+                    </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 p-2">
+                    <img src="assets/img/iguana-1.jpg" alt="Iguana del parrafo">
+                </div>
+            </div>
         </div>
 
     </section>
     <!-- Titulo y 3 iconos unos al lado del otro-->
 
     <section class="segunda-parte">
+        <div class="container p-4">
+            <div class="row">
+                <h1 class="text-center link-light mb-3"> Características </h1>
 
-        <h1 class="titulo-2"> Características </h1>
-
-        <div class="ojo"> <i class="fa-solid fa-eye"></i>
-            <p>Tercer Ojo</p>
+                <div class="col-4 text-center p-2"><i class="fa-solid fa-eye iconos fa-3x link-light"></i>
+                    <p class="link-light">Tercer Ojo</p>
+                </div>
+                <div class="col-4 text-center p-2"><i class="fa-solid fa-hand-point-up iconos fa-3x link-light"></i>
+                    <p class="link-light">Pacificas</p>
+                </div>
+                <div class="col-4 text-center p-2"><i class="fa-solid fa-paintbrush iconos fa-3x link-light"></i>
+                    <p class="link-light">Cambian de color</p>
+                </div>
+            </div>
         </div>
-        <div class="mano"><i class="fa-solid fa-hand-point-up"></i>
-            <p>Pacificas</p>
-        </div>
-        <div class="pincel"><i class="fa-solid fa-paintbrush"></i>
-            <p>Cambian de color</p>
-        </div>
-
 
     </section>
 
     <!-- 3 Imagenes uno al lado de la otra -->
     <section class="tercera-parte">
-
-        <div><img src="assets/img/iguana-2.jpg" alt="carrusel"></div>
-        <div><img src="assets/img/iguana-3.jpg" alt="carrusel"></div>
-        <div><img src="assets/img/iguana-4.jpg" alt="carrusel"></div>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 p-2"><img src="assets/img/iguana-2.jpg " alt="carrusel"></div>
+                <div class="col-12 col-sm-12 col-md-4 p-2"><img src="assets/img/iguana-3.jpg " alt="carrusel"></div>
+                <div class="col-12 col-sm-12 col-md-4 p-2"><img src="assets/img/iguana-4.jpg " alt="carrusel"></div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
-        <p> Visita https://www.anipedia.net/iguanas/iguana-verde/ para conocer más.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <p class="text-center link-light p-3 mb-0"> Visita //www.anipedia.net/iguanas/iguana-verde/ para conocer más.</p>
+                </div>
+            </div>
+        </div>
     </footer>
-
+    <script src="https://kit.fontawesome.com/8dd4c06a1f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

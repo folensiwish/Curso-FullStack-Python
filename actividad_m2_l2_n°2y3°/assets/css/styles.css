@@ -1,12 +1,16 @@
-body{
-    background-color: lightblue;
-    margin-left: 300px;
-    margin-right: 300px;
+html , body {
+    background-color: var(--bs-info);
+}
+header h1{
+    text-align: center;
+}
+.rojo{
+    color: red;
+    margin: 30px;
 }
 
-h1 {
-    text-align: center;
-    color: red;
+div img {
+    margin: 30px;
 }
 
 article div{
@@ -29,4 +33,12 @@ section div {
 
 section h2{
     text-align: center;
+}
+
+.container-fluid{
+    background-color: var(--bs-info);
+}
+
+nav {
+    border: 2px solid black;
 }
