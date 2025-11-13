@@ -1,8 +1,8 @@
-
+/*
 body {
     background-color: black;
 }
-
+*/
 header img{
     width: 100%;
 }
@@ -11,17 +11,17 @@ header img{
     height: 300px;
     width: 100%;
 }
-
+/*
 .segunda-parte{
     background-color: gray;
 }
-
+*/
 .tercera-parte img {
     height: 200px;
     width: 100%;
 }
 
-
+/*
 .footer {
     background-color: gray;
-}
+}*/

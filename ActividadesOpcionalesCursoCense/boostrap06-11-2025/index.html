@@ -1,13 +1,172 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="container bg-secondary p-3">
+      <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Bootstrap" width="100%" height="100%"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse mx-1" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-white " aria-current="page" href="#">Acerca de mí</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#">Trabajos</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="back-imagen">
+    <div class="container text-end">
+      <div class="row">
+        <div class="col-0 col-md-6 "></div>
+        <div class="col-12 col-md-6 mt-5 pt-5">
+          <h1 class="pt-5 text-white mb-5 display-1"> Comidas del fin del mundo </h1>
+          <p class="ms-auto text-white mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolor,
+            eveniet accusantium, doloremque aspernatur sequi eos ea cumque obcaecati assumenda minus ipsa
+            quaerat tempora? Omnis modi aliquam numquam praesentium sunt!</p>
+          <div class="mt-5">
+            <button type="button" class="btn btn-outline-info text-white">Trabajos</button>
+            <button type="button" class="btn btn-info text-white">Contacto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="bg-light">
+    <div class="container">
+      <h1 class="text-center text-black mt-5 p-2 font-weight-bold">Acerca de mí</h1>
+      <p class="text-center m-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, placeat quam vero
+        alias optio asperiores animi in, doloribus, quo ratione maxime amet fugiat quisquam commodi ea corporis nam
+        reprehenderit praesentium!</p>
+      <div class="row">
+        <div class="col-12 col-md-4 text-center mt-5">
+          <i class="fa-solid fa-camera fa-3x"></i>
+          <p class="p-1 text-black font-weight-bold"><strong>Fotografa de comida</strong></p>
+          <p class="text-center my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eligendi enim
+            qui, voluptas neque et
+            quibusdam velit obcaecati officia inventore repellat id exercitationem at ad explicabo, repudiandae dolorum
+            labore aliquid.</p>
+        </div>
+
+        <div class="col-12 col-md-4 text-center mt-5">
+          <i class="fa-solid fa-bullhorn fa-3x"></i>
+          <p class="p-1 text-black "><strong>Crítica culinaria</strong></p>
+          <p class="text-center my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eligendi enim
+            qui, voluptas neque et
+            quibusdam velit obcaecati officia inventore repellat id exercitationem at ad explicabo, repudiandae dolorum
+            labore
+            aliquid.</p>
+        </div>
+
+        <div class="col-12 col-md-4 text-center mt-5 ">
+          <i class="fa-solid fa-map fa-3x"></i>
+          <p class="p-1 text-black font-weight-bold "><strong>Bloguera de viajes</strong></p>
+          <p class="text-center my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eligendi enim
+            qui, voluptas neque et
+            quibusdam velit obcaecati officia inventore repellat id exercitationem at ad explicabo, repudiandae dolorum
+            labore aliquid.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="bg-info">
+    <h1 class="text-white text-center py-5">Mis trabajos</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-4 pb-5">
+          <div class="card" style="width: 100%;">
+            <img src="assets/img/card-1.jpg" class="card-img-top" alt="..." height="283px">
+            <div class="card-body">
+              <h5 class="card-title">¡Asado en la patagonia!</h5>
+              <p class="card-text p-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum corporis
+                aperiam tempora ea aut.</p>
+              <a href="#" class="btn btn-outline-info">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 pb-5">
+          <div class="card" style="width: 100%;">
+            <img src="assets/img/card-2.jpg" class="card-img-top" alt="..." height="283px">
+            <div class="card-body" >
+              <h5 class="card-title">¡Papas del fin del mundo!</h5>
+              <p class="card-text p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iure
+                officiis maxime amet numquam </p>
+              <a href="#" class="btn btn-outline-info">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 pb-5 ">
+          <div class="card" style="width: 100% ">
+            <img src="assets/img/card-3.jpg" class="card-img-top" alt="..." height="283px">
+            <div class="card-body">
+              <h5 class="card-title">¡Salmones de Alaska!</h5>
+              <p class="card-text p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iure
+                officiis maxime amet numquam </p>
+              <a href="#" class="btn btn-outline-info">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Formulario de contacto -->
+  <section>
+    <div class="container">
+      <h1 class="text-center text-black mt-5">Contáctame</h1>
+      <p class="text-center text-black my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolores
+        accusantium, quos optio
+        aspernatur laudantium repudiandae eos quam error sed nemo consectetur adipisicing elit. Repudiandae iure
+        officiis</p>
+      <div class="mb-3">
+        <label for="name" class="form-label"><strong>Nombre</strong></label>
+        <input type="name" class="form-control" id="name" placeholder="Escribe tu nombre">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"><strong>Correo electronico</strong></label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"><strong>Comentarios</strong></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe algun comentario"></textarea>
+      </div>
+      <div class="row">
+        <div class="col-8 col-xs-8 col-sm-9 col-md-10 col-xl-10" ></div>
+        <div class="col-4 col-xs-4 col-sm-3 col-md-2 col-xl-2 mb-3">
+          <button type="submit" class="btn btn-info m-2 text-end text-white px-3">Enviar</button>
+        </div>
+      </div>
+    </div> 
+  </section>
+  <footer class="bg-secondary p-3">
+    <div class="container">
+      <p class="text-center text-white">Olivia Ros 2019. Todos los derechos reservados.</p>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8dd4c06a1f.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,0 +1,6 @@
+.back-imagen{
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-image: url(../img/bg-hero.jpg);
+    height: 850px;
+}
