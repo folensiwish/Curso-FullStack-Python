@@ -1,8 +1,6 @@
-.bs-card-gray{
-    background-color: #dcdee3;
+.back-imagen {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/fondo-textura-abstracta_1258-30506.avif);
+    height: 100%;
 }
-
-.bs-hero-color{
-    background-color: #291F1E;
-}
-

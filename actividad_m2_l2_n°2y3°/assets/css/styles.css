@@ -1,44 +1,17 @@
-html , body {
-    background-color: var(--bs-info);
+body {
+    background-color: lightblue;
 }
-header h1{
-    text-align: center;
-}
-.rojo{
+
+.titulos{
     color: red;
-    margin: 30px;
 }
 
-div img {
-    margin: 30px;
-}
-
-article div{
+.centrado{
     text-align: center;
+}
+
+.imagen {
     margin: auto;
-}
-
-article p{
-    text-align: center;
-}
-
-img {
     width: 400px;
     height: 300px;
-}
-
-section div {
-    text-align: center;
-}
-
-section h2{
-    text-align: center;
-}
-
-.container-fluid{
-    background-color: var(--bs-info);
-}
-
-nav {
-    border: 2px solid black;
 }
