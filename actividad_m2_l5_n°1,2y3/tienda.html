@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en" >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="[https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css]
+        (https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css)">
+    <link rel="stylesheet" href="css/styles.css">
+    <style> .oscuro { background-color: #121212; color: #f0f0f0; } </style>
+</head>
+
+<body >
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container bg-secondary p-3">
+            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Bootstrap" width="100%"
+                    height="100%"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-1" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li>
+                        <button type="button" class="btn btn-outline-info" onclick="oferta()">Oferta</button>
+                    </li>
+                    <li>
+                        <button class="btn btn-outline-info" onclick="toggleModoOscuro()">Modo Oscuro</button>
+                    </li>
+                    <li>
+                    <!-- Carrito-->
+                    <a class="navbar-brand" href="#"><i class="fa-regular fa-cart-arrow-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+
+    </header>
+    <section>
+        <div class="container text-end">
+      <div class="row">
+        <div class="col-0 col-md-6 text-center pt-5">
+            <img src="assets/img/tv.png" alt="TV" height="100%" width="100%">
+        </div>
+        <div class="col-12 col-md-6 mt-5 pt-5">
+          <h1 class="pt-5  mb-5 display-1"> Titulo pendiente </h1>
+          <p class="ms-auto  mb-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolor,
+            eveniet accusantium, doloremque aspernatur sequi eos ea cumque obcaecati assumenda minus ipsa
+            quaerat tempora? Omnis modi aliquam numquam praesentium sunt!</p>
+          <div class="mt-5">
+            <button type="button" class="btn btn-outline-info text-white">Boton1</button>
+            <button type="button" class="btn btn-info text-white">Boton2</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    </section>
+    <!-- Seccion de productos -->
+    <section>
+        <h1 class=" text-center py-5">Mis trabajos</h1>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-12 col-sm-12 col-md-4 pb-5">
+                    <div class="card" style="width: 100%; " >
+                        <img src="assets/img/card-1.jpg" class="card-img-top" alt="..." height="283px">
+                        <div class="card-body">
+                            <h5 class="card-title">¡Asado en la patagonia!</h5>
+                            <p class="card-text p-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                                nostrum corporis
+                                aperiam tempora ea aut.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Launch demo modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-info" id="clicks" onclick="onClick()" >Ver más</a>
+                                <p>Clicks:<a id="clicks">0</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-sm-12 col-md-4 pb-5">
+                    <div class="card" style="width: 100%;" id="ofertas">
+                        <img src="assets/img/tv.png" class="card-img-top" alt="..." height="283px">
+                        <div class="card-body">
+                            <h5 class="card-title">¡Papas del fin del mundo!</h5>
+                            <p class="card-text p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repudiandae iure
+                                officiis maxime amet numquam </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Launch demo modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <button class="btn btn-outline-info" id="clicks" onclick="onClick()" >Ver más</a>
+                                <p>Clicks:<a id="clicks">0</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 pb-5 ">
+                    <div class="card" style="width: 100%" id="ofertas">
+                        <img src="assets/img/carrito.png" class="card-img-top" alt="..." height="283px">
+                        <div class="card-body">
+                            <h5 class="card-title">¡Salmones de Alaska!</h5>
+                            <p class="card-text p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repudiandae iure
+                                officiis maxime amet numquam </p>
+                            <!-- Scrollable modal -->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Launch demo modal
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-info" id="clicks" onclick="onClick()" >Ver más</a>
+                                <p>Clicks:<a id="clicks">0</a></p>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Formulario de contacto -->
+  <section>
+    <div class="container">
+      <h1 class="text-center mt-5">Contáctame</h1>
+      <p class="text-center my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolores
+        accusantium, quos optio
+        aspernatur laudantium repudiandae eos quam error sed nemo consectetur adipisicing elit. Repudiandae iure
+        officiis</p>
+      <div class="mb-3">
+        <label for="name" class="form-label"><strong>Nombre</strong></label>
+        <input type="name" class="form-control" id="name" placeholder="Escribe tu nombre">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"><strong>Correo electronico</strong></label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"><strong>Comentarios</strong></label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe algun comentario"></textarea>
+      </div>
+      <div class="row">
+        <div class="col-8 col-xs-8 col-sm-9 col-md-10 col-xl-10" ></div>
+        <div class="col-4 col-xs-4 col-sm-3 col-md-2 col-xl-2 mb-3">
+          <button type="submit" class="btn btn-info m-2 text-end text-white px-3">Enviar</button>
+        </div>
+      </div>
+    </div> 
+  </section>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/contador.js"></script>
+    <script src="https://kit.fontawesome.com/8dd4c06a1f.js" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

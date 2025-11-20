@@ -1,0 +1,18 @@
+.back-imagen {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/fondo-textura-abstracta_1258-30506.avif);
+    height: 100%;
+}
+
+    .scroll-to-top-btn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position */
+        bottom: 20px; /* Distance from bottom */
+        right: 20px; /* Distance from right */
+        /* Add other styling like background-color, border, padding, etc. */
+    }
+
+    .scroll-to-top-btn.show {
+        display: block; /* Show when 'show' class is added */
+    }
