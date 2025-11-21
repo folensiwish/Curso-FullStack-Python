@@ -1,0 +1,47 @@
+body{
+    width: 960px;
+    margin: auto;
+}
+.title{
+    text-align: center;
+}
+
+.inline{
+    display: flex;
+}
+
+.left{
+    width: 260px;
+    display: inline-block;
+    align-items: flex-start;
+    margin-right: 5px;
+    
+}
+
+.right {
+    width: 700px;
+    display: inline-block;
+    align-items: flex-start;
+   
+}
+.contenido-libro{
+    display: flex;
+}
+.left-contenido{
+    display: inline-block;
+    width: 233px;
+  
+
+}
+.midle-contenido {
+    display: inline-block;
+    width: 233px;
+   
+   
+}
+.right-contenido {
+    display: inline-block;
+    width: 233px;
+    
+   
+}
