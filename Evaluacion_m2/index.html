@@ -1,0 +1,315 @@
+<!-- El doctype indica al navegador que el archivo es html 5-->
+<!DOCTYPE html>
+<!-- El html indica donde comienza la pagina y que se procese todas las etiquetas
+ que este contenga-->
+<html lang="en">
+<!-- El head aqui se encuentran informacion de meta datos que nos sirve para usar dentro de la pagina
+ la cual no sera visible para el cliente excepto el titulo, funciona para llamar scripts, hojas de estilo
+ es mas para el navegador -->
+
+<head>
+    <!-- Meta, Etiqueta usada para definir otros metadatos que no se pueden definir con una etiqueta 
+ HTML especifica-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title, etiqueta usada para darle un titulo en la pagina, que se vera en la pestaña del navegador-->
+    <title>Agua Pura</title>
+    <link rel="stylesheet" href="assets/img/agua.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<!-- El body contiene el contenido de la pagina-->
+
+<body class="bg-info" id="section2">
+    <div class="container-fluid bg-info-subtle">
+        <nav class="navbar navbar-expand-lg bg-info-subtle fs-5">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <h1>Agua Pura</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-white">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="quienes-somos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#listaProductos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="#" data-bs-toggle="modal" data-bs-target="#carritoModal">
+                                <i class="bi bi-cart-fill fs-4"></i>
+                                <span class="badge bg-danger rounded-pill cart-badge" id="cartCount">0</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+    </div>
+    <hr>
+    <!-- Header, es una seccion que contiene el encabezado de una pagina-->
+    <header>
+        <div class="container">
+            <div class="row">
+                <!-- H1, esta etiqueta es para colocar un titulo-->
+                <div class="col-12 col-md-6 my-5 text-center">
+                    <img src="assets/img/agua.jpg" alt="Agua" class="imagen text-center img-fluid" width="100%"
+                        height="100%">
+                </div>
+                <div class="col-12 col-md-6 my-5 pt-5 text-center">
+                    <h1 class="text-center">Entrega rápida y segura de agua purificada a tu
+                        hogar💧</h1>
+                    <p class="mt-4 fs-5">En Agua Pura ofrecemos bidones de 20 litros con agua purificada, listos para
+                        entregar
+                        en tu domicilio con el mejor servicio y atención personalizada.</p>
+                    <p class="fs-5"> Selecciona tu producto favorito, elige tu método de pago y recibe tu pedido sin
+                        salir de casa.
+                    </p>
+                    <div class="text-center mt-4">
+                        <a href="#footer"><button type="button" class="btn btn-primary">Contacto</button></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <hr>
+    <!-- section, permite tener una seccion estructurada en el documento-->
+
+    <!-- article, permite tener una seccion independientemente de la pagina-->
+    <section class="back-imagen" id="listaProductos">
+        <div class="container">
+            <h2 class="text-danger pt-3">Promoción del mes</h2>
+            <p class="text-white">¡Lleva 5 bidones y paga solo 4! Oferta válida hasta el 30 de noviembre.</p>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 pb-5">
+                    <div class="card bg-info-subtle" style="width: 100%;">
+                        <img src="assets/img/aguaspack.jpg" class="card-img-top " alt="..." height="283px">
+                        <div class="card-body">
+                            <h5 class="card-title">Pack Familiar de Bidones</h5>
+                            <p class="card-text p-2 ">Ahorra y mantén tu hogar siempre hidratado. Pack de bidones de
+                                agua purificada de 20L,
+                                ideales para familias o empresas. Listos para entrega rápida y segura.
+                                <strong class="text-primary ms-2">$7500</strong>
+                            </p>
+                            <a href="producto.html" class="btn btn-info text-white">Ver más</a>
+                            <button type="button" class="btn btn-primary" data-id="1">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 pb-5">
+                    <div class="card bg-info-subtle" style="width: 100%;">
+                        <img src="assets/img/dispesador_ventilador.jpg" class="card-img-top " alt="..." height="283px">
+                        <div class="card-body">
+                            <h5 class="card-title">Dispensador Premium</h5>
+                            <p class="card-text p-2">Disfruta de agua fría y caliente al instante. Dispensador eléctrico
+                                con sistema de ventilación
+                                eficiente, diseño moderno y fácil recarga. Perfecto para el hogar u oficina.
+                                <strong class="text-primary ms-2">$25000</strong>
+                            </p>
+                            <a href="producto3.html" class="btn btn-info text-white">Ver más</a>
+                            <button type="button" class="btn btn-primary " data-id="2">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 pb-5 ">
+                    <div class="card bg-info-subtle" style="width: 100% ">
+                        <img src="assets/img/bidon.webp" class="card-img-top " alt="..." height="283px">
+                        <div class="card-body ">
+                            <h5 class="card-title">Bidón de Agua 20 Litros</h5>
+                            <p class="card-text p-2">Agua purificada de la mejor calidad en práctico formato de 20L.
+                                Ideal para recargas diarias,
+                                con sello de seguridad y tapa hermética para tu confianza.
+                                <strong class="text-primary ms-2">$2500</strong>
+                            </p>
+                            <a href="producto2.html" class="btn btn-info text-white">Ver más</a>
+                            <button type="button" class="btn btn-primary" data-id="3">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 pb-5">
+                    <div class="card bg-info-subtle" style="width: 100%;">
+                        <img src="assets/img/duo-bidon.png" class="card-img-top " alt="..." height="283px">
+                        <div class="card-body">
+                            <h5 class="card-title">Bidones 20 + 10 Litros</h5>
+                            <p class="card-text p-2">Disfruta de agua fría y caliente al instante. Dispensador eléctrico
+                                con sistema de ventilación
+                                eficiente, diseño moderno y fácil recarga. Perfecto para el hogar u oficina.
+                                <strong class="text-primary ms-2">$4500</strong>
+                            </p>
+                            <a href="producto4.html" class="btn btn-info text-white">Ver más</a>
+                            <button type="button" class="btn btn-primary" data-id="4">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 pb-5">
+                    <div class="card bg-info-subtle" style="width: 100%;">
+                        <img src="assets/img/bidon-dispensador.webp" class="card-img-top " alt="..." height="283px"
+                            width="100%">
+                        <div class="card-body">
+                            <h5 class="card-title">Dispensador + Bidon</h5>
+                            <p class="card-text p-2">Disfruta de agua fría y caliente al instante. Dispensador eléctrico
+                                con sistema de ventilación
+                                eficiente, diseño moderno y fácil recarga. Perfecto para el hogar u oficina.
+                                <strong class="text-primary ms-2">$6500</strong>
+                            </p>
+                            <a href="producto5.html" class="btn btn-info text-white">Ver más</a>
+                            <button type="button" class="btn btn-primary" data-id="5">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- Articulo sobre mantencion de bidones -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 my-5">
+                    <h2 class="text-center">🧴 Cómo mantener tus bidones limpios y frescos</h2>
+                    <ul class="pt-5 fs-5">
+                        <li>Limpia tus bidones cada dos semanas con una mezcla de agua y vinagre blanco para eliminar
+                            bacterias ymantener la pureza del agua.</li>
+                        <li>Evita exponerlos al sol directo, ya que el calor puede alterar su frescura y sabor.</li>
+
+                        <li>Una buena mantención prolonga la vida del envase y conserva la calidad del agua purificada
+                            que
+                            disfrutas cada día.</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 my-5">
+                    <img src="assets/img/limpieza-bidon.jpg" alt="limpieza" width="100%" height="100%">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <hr>
+
+    <!-- Modal del Carrito -->
+    <div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info-subtle">
+                    <h5 class="modal-title" id="carritoModalLabel">
+                        <i class="bi bi-cart-fill me-2"></i>Mi Carrito
+                        <span class="badge bg-primary ms-2" id="cartCount">0</span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody id="contenidoProductos">
+                                <!-- Aquí se insertarán dinámicamente los productos -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center py-3" id="carritoVacio" style="display: none;">
+                        <i class="bi bi-cart-x fs-1 text-muted"></i>
+                        <p class="text-muted">Tu carrito está vacío</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="w-100 d-flex justify-content-between align-items-center">
+                        <h4>Total: <span id="total" class="text-primary">$0</span></h4>
+                        <div>
+                            <button type="button" class="btn btn-danger me-2" id="emptyCart">
+                                <i class="bi bi-trash"></i> Vaciar Carrito
+                            </button>
+                            <button type="button" class="btn btn-success">
+                                <i class="bi bi-check-circle"></i> Finalizar Compra
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer, Pie de pagina que permite establecer más informacion sobre el contenido o poder contactarse
+     hasta mostrar derechos de autor, redes sociales, etc..-->
+    <footer class="bg-info-subtle" id="footer">
+        <div class="container">
+            <div class="row pt-4 text-center">
+                <div class="col-12 col-md-4">
+                    <h3 class="text-primary">Agua Pura</h3>
+                    <p>
+                        Expertos en distribucion de agua purificada desde 2020. Ofrecemos bidones de 20 litros con la
+                        mas alta calidad
+                        y el mejor servicio de entrega a domicilio
+                    </p>
+                    <p>
+                        <ul style="list-style: none;">
+                        <li><i class="bi bi-geo-alt-fill">Maipú, Santiago Metropolitana Chile</i></li>
+                        <li><i class="bi bi-telephone-fill">+569 1234 5678</i></li>
+                        <li><i class="bi bi-envelope-fill"> contacto@aguapura.cl</i></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="text-primary">Nuestros servicios</h3>
+                    <ul style="list-style: none;">
+                        <li><i class="bi bi-check-lg"> Entrega a domicilio</i></li>
+                        <li><i class="bi bi-check-lg"></i> Agua 100% purificada</li>
+                        <li><i class="bi bi-check-lg"></i> Suscripción mensual</li>
+                        <li><i class="bi bi-check-lg"></i> Dispensadores en arriendo</li>
+                        <li><i class="bi bi-check-lg"></i> Atención Lunes a Sabado</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h3 class="text-primary">Horario de atencion</h3>
+                    <p>Lunes a viernes: 8:00 - 18:00 hrs</p>
+                    <p>Sabados: 9:00 - 14:00 hrs</p>
+                    <h6 class="text-primary">Siguenos</h6>
+                    <div class="gap-5">
+                        <p><i class="bi bi-instagram"></i> <i class="bi bi-twitter-x"></i> <i class="bi bi-facebook"></i></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row text-center">
+                <div class="col-6">
+                    <p><strong>Metodos de pago: </strong><span><i class="bi bi-cash-stack"></i><i class="bi bi-credit-card-fill"></i> Efectivo, Tarjetas, Transferencia</span></p>
+                </div>
+                <div class="col-6">
+                    <p>2025 AguaPura. Todos los derechos reservados</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <button type="button" class="btn btn-primary scroll-to-top-btn" id="scrollToTopBtn"><i
+            class="bi bi-arrow-up-circle-fill fs-1"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/carro.js"></script>
+</body>
+
+</html>
