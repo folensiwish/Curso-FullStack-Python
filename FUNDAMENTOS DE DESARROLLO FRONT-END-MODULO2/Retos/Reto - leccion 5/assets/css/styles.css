@@ -1,0 +1,22 @@
+body {
+    width: 960px;
+    margin: auto;
+}
+
+#contador {
+    height: 400px;
+    width: 350px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 300px;
+    border-radius: 10px ;
+}
+
+#incrementar{
+    margin-top: 20px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+}
+
