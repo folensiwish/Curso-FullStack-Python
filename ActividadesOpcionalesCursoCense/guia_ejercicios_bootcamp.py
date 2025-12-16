@@ -23,7 +23,7 @@
 # 3. Simular una batalla: el usuario elige un héroe y un villano por nombre y el programa indica el ganador. EXTRAER -> con un for !!!!!!
 
 # 4. Mostrar un ranking ordenado de mayor a menor poder de todos los personajes.
-
+'''
 villano = [
     {"nombre": "Sombrío", "fuerza": 70, "velocidad": 40},
     {"nombre": "Vortéx", "fuerza": 55, "velocidad": 95}
@@ -48,7 +48,15 @@ elif agregar_psj == 'heroe':
 else:
     print("Ingresa una opcion valida heroe/villano")
 
-for i,k in zip(villano,heroe):
+ingrese_heroe = input('Ingresa un hero para combatir: ')
+ingrese_villano = input('Ingrese un villano para combatir: ')
+
+
+for villain ,hero in zip(villano,heroe):
+    if ingrese_villano in villain['nombre'] and ingrese_heroe in hero['nombre']:
+        print(ingrese_villano, ingrese_heroe)
+'''        
+        
     
 
 
@@ -70,6 +78,60 @@ for i,k in zip(villano,heroe):
 # 2. Permitir vender productos (restar cantidad), validando que exista y que haya stock suficiente.
 # 3. Si la cantidad queda en 0, eliminar automáticamente el producto.
 # 4. Mostrar un resumen final del inventario, el total de productos vendidos y el desglose por artículo.
+
+inventario = {
+    "manzana": 30,
+    "pan": 15,
+    "agua": 50
+}
+
+while True:
+
+    menu = int(input('\nMenu de la tienda\n\n1)Agregar productos con su cantidad\n2)Vender productos\n3)Resumen final del inventario\n0) Salir\nIngrese su opcion: '))
+
+    if menu == 1:
+        producto = input('Ingresa un producto: ').lower()
+        cant_producto = int(input('Ingresa una cantidad: '))
+        for i,k in inventario.items():
+            if producto == i:
+                inventario[i] = k + cant_producto
+        inventario[producto] = cant_producto
+    
+    if menu == 2:
+        '''
+        ¿Qué entra? (inputs)
+
+        ¿Qué sale? (outputs)
+
+        ¿Qué cambia? (estado)
+
+        ¿Qué se repite? (bucles)
+
+        ¿Qué se decide? (condiciones)
+        '''
+        encontrado = False
+        vender_producto = input('Elige el producto a vender: ').lower()
+
+        cant_venta = int(input('Ingrese la cantidad de producto en venta: '))
+        for i,k in inventario.items():
+            if vender_producto == i and k >= cant_venta:
+                inventario[i] = k - cant_venta
+                encontrado = True
+            if k - cant_venta == 0:
+                del inventario[i]      
+                break
+                     
+        if not encontrado:
+            print('\nEl producto es inexistente o no hay stock suficiente')
+        print(inventario)
+    if menu == 3:
+        
+    if menu == 0:
+        break
+
+
+
+
 
 
 ###############################################################
@@ -144,3 +206,4 @@ for i,k in zip(villano,heroe):
 
 
 # Fin del archivo
+
