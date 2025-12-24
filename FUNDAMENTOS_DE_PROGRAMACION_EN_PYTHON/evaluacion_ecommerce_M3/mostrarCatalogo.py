@@ -8,5 +8,5 @@ def mostrar_catalogo():
     print(f"{'id':<5} {'nombre':<20} {'categoria':<15}{'precio':<7}") 
     print("-" * 50) 
 
-    for llave in catalogo():
-        print(f'{llave['id']:<5} {llave['nombre']:<20} {llave['categoria']:<15} ${llave['precio']:<7}\n')  
+    for valor in catalogo():
+        print(f'{valor['id']:<5} {valor['nombre']:<20} {valor['categoria']:<15} ${valor['precio']:<7}\n')  
