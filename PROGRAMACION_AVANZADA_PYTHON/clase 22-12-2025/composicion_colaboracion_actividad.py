@@ -125,7 +125,6 @@ Esto es un ejemplo de COLABORACIÓN.
 # Métodos:
 # - mostrar_info()
 
-
 class Producto:
     
     def __init__(self,nombre,precio):
@@ -136,14 +135,12 @@ class Producto:
         print(f'El nombre del producto: {self.nombre}')
         return self.precio
 
-
 # 2) Crea la clase Cliente
 # Atributos:
 # - nombre
 #
 # Métodos:
 # - mostrar_info()
-
 
 class Cliente:
     
@@ -152,7 +149,6 @@ class Cliente:
     
     def mostrar_info(self):
         return self.nombre
-
 
 # 3) Crea la clase Pedido
 # Atributos:
@@ -163,7 +159,6 @@ class Cliente:
 # - agregar_producto(producto)
 # - calcular_total()
 # - mostrar_resumen()
-
 
 class Pedido:
     
