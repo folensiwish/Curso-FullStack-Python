@@ -1,0 +1,3 @@
+El diagrama representa un Sistema Educacional mediante un modelo de clases UML que utiliza una arquitectura orientada a objetos. En el centro, se observa una estructura de herencia donde la clase Persona actúa como superclase de Alumno y Profesor, compartiendo atributos como RUT, nombre y email.
+
+A la derecha, la clase Carrera funciona como un nodo central vinculado mediante relaciones de composición/agregación hacia las clases Profesor y Asignatura. Finalmente, el diagrama detalla la asociación entre Alumno y Asignatura, definiendo métodos específicos para la gestión académica como el cálculo de promedios, la inscripción de materias y la asignación de cupos.
