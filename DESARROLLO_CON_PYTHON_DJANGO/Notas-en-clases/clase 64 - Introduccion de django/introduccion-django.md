@@ -25,7 +25,8 @@ Actividad:
     3. Crear entorno virtual
     4. Activar entorno virtual
     5. Instalar django
-    6. Correr el servidor django
+    6.Crear el proyecto con django-admin startproject nombredelproyecto
+    7. Correr el servidor django
 Objetivo: Mostrar el cohete que aperece en la pagina web
 Usar gitbash para la consola en vez del cmd.
 
