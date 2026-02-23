@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Que pasa locooo!</h1>
+    <ul>
+        {% if tipo_usuario == 'admin' %}
+            <li>El nombre es: {{ nombre }} y soy tipo admin </li>
+        {% else %}
+            <li>El nombre es: {{ nombre }} y soy tipo usuario </li>
+        {% endif %}
+        <li>La edad es: {{ edad }}</li>
+        {% for profesion in profesiones%}
+            <li>La profesion es: {{ profesion }}</li>
+        {% endfor %}
+        
+    
+    </ul>
+</body>
+</html>
