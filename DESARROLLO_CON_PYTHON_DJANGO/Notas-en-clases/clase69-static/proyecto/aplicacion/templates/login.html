@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Estructura de split de fuerza</h1>
+    
+        <img src="{% static 'img/images.jpg' %}" alt="">
+    </h3>
+    <hr>
+    <h3>Tipo de ejercicio {{ ejercicio }}
+    <ul>
+        <li>Cuantas sets del ejercicio {{sets}}
+        </li>
+        <li>Cuantas repeticiones del ejercicio {{reps}}</li>
+        <li>Que ejercicios realizas?
+            <ol>{% for ejercicio in ejercicios %}
+                <li> {{ejercicio}}</li>
+                {% endfor %}
+            </ol>
+        </li>
+    </ul>
+    
+</body>
+</html>
