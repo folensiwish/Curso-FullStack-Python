@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-ms-3 text-center">
+            {% for cursos in lista_curso %}
+            <div class="card" style="width: 100%;">
+                
+                <div class="card-body">
+                    <h2 class="card-title">{{cursos.nombre}}</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="{% url 'detalle_curso' %}" class="btn btn-primary mb-3">Go somewhere</a>
+                    <img src="{% static 'img/'%}{{ cursos.img }}" class="card-img-top" alt="..." width="auto" height="auto">
+                    
+                    
+                </div>
+                
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

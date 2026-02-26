@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="py-5 bg-light border-bottom">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 fw-bold">Nuestra Misión</h1>
+                <p class="lead text-muted">{{ data.mision }}</p>
+                <p>Nacimos con la idea de que la educación de alta calidad debe ser accesible para todos. Nos enfocamos en habilidades técnicas que el mercado laboral exige hoy mismo.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static 'img/about-hero.jpg' %}" class="img-fluid rounded shadow" alt="Nuestro equipo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+        <div class="row">
+            {% for stat in data.stats %}
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h2 class="display-5 fw-bold">{{ stat.cantidad }}</h2>
+                <p class="mb-0">{{ stat.titulo }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2>¿Por qué elegirnos?</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <div class="p-4 border rounded-3 h-100">
+                    <i class="bi bi-laptop fs-1 text-primary"></i>
+                    <h4 class="mt-3">Aprende a tu ritmo</h4>
+                    <p class="text-muted">Acceso de por vida a todos los contenidos desde cualquier dispositivo.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="p-4 border rounded-3 h-100">
+                    <i class="bi bi-patch-check fs-1 text-primary"></i>
+                    <h4 class="mt-3">Certificación Real</h4>
+                    <p class="text-muted">Al finalizar cada curso, obtienes un certificado para potenciar tu CV.</p>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="p-4 border rounded-3 h-100">
+                    <i class="bi bi-chat-heart fs-1 text-primary"></i>
+                    <h4 class="mt-3">Comunidad Activa</h4>
+                    <p class="text-muted">No estás solo. Resuelve dudas en nuestros foros y grupos exclusivos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-dark text-white text-center">
+    <div class="container">
+        <h2 class="mb-4">¿Listo para empezar tu carrera?</h2>
+        <a href="{% url 'lista_cursos' %}" class="btn btn-primary btn-lg">Explorar Cursos</a>
+    </div>
+</section>
+{% endblock %}
