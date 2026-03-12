@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="avatar"
+                        class="rounded-circle img-fluid" style="width: 120px;">
+                    <h5 class="my-3">Alberto Fernández</h5>
+                    <p class="text-muted mb-1">Cliente Gold</p>
+                    <p class="text-muted font-size-sm">Maipú, Santiago, CL</p>
+                    <div class="d-flex justify-content-center mb-2">
+                        <button type="button" class="btn btn-primary btn-sm">Editar Perfil</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4 mb-lg-0">
+                <div class="card-body p-0">
+                    <ul class="list-group list-group-flush rounded-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <i class="bi bi-envelope-fill text-primary"></i>
+                            <p class="mb-0">alberto@ejemplo.com</p>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <i class="bi bi-geo-alt-fill text-danger"></i>
+                            <p class="mb-0">Maipú, Chile</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-white">
+                    <h5 class="mb-0">Mis Pedidos Recientes</h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Orden #</th>
+                                    <th>Fecha</th>
+                                    <th>Total</th>
+                                    <th>Estado</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>#10254</strong></td>
+                                    <td>10 Mar 2026</td>
+                                    <td>$25.990</td>
+                                    <td><span class="badge rounded-pill bg-success">Enviado</span></td>
+                                    <td><a href="#" class="btn btn-outline-secondary btn-sm">Ver</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>#10212</strong></td>
+                                    <td>28 Feb 2026</td>
+                                    <td>$12.500</td>
+                                    <td><span class="badge rounded-pill bg-primary">Entregado</span></td>
+                                    <td><a href="#" class="btn btn-outline-secondary btn-sm">Ver</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    {% if not pedidos %}
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow-sm bg-light">
+                        <div class="card-body">
+                            <h6>Mis Direcciones</h6>
+                            <p class="small text-muted">Gestiona tus lugares de entrega.</p>
+                            <a href="#" class="btn btn-sm btn-dark">Administrar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm bg-light">
+                        <div class="card-body">
+                            <h6>Seguridad</h6>
+                            <p class="small text-muted">Cierra sesion.</p>
+                            <form action="{% url 'logout' %}" method="post">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger p-1">Cerrar sesion</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

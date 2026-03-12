@@ -1,0 +1,57 @@
+
+
+  
+        
+
+
+
+{% extends "base.html" %}
+
+
+{% block content %}
+<header class="py-5 bg-dark" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1350&q=80') no-repeat center center; background-size: cover;">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder text-white mb-2">CALIDAD EN CADA DETALLE</h1>
+                    <p class="lead fw-normal text-white-50 mb-4">Encuentra los mejores productos con despacho rápido y garantía asegurada en todas tus compras.</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="{% url 'login' %}">Ingresar</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#saber-mas">Saber más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="py-5" id="features">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3" style="width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <i class="bi bi-truck fs-3"></i>
+                </div>
+                <h2 class="h4 fw-bolder">Envío Express</h2>
+                <p>Logística optimizada para que recibas tu pedido en tiempo récord directamente en tu hogar.</p>
+            </div>
+            <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3" style="width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <i class="bi bi-shield-check fs-3"></i>
+                </div>
+                <h2 class="h4 fw-bolder">Pago Seguro</h2>
+                <p>Integramos las pasarelas de pago más confiables para proteger cada una de tus transacciones.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3" style="width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                    <i class="bi bi-arrow-repeat fs-3"></i>
+                </div>
+                <h2 class="h4 fw-bolder">Devolución Fácil</h2>
+                <p>¿No estás conforme? Tienes un sistema de cambios simplificado para tu total tranquilidad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
