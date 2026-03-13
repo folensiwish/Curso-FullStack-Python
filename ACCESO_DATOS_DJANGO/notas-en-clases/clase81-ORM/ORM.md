@@ -38,15 +38,15 @@ Consultas con el ORM de django:
     ![alt text](consultas-orm.png)
 
     Producto.objects.all():
-        Se desglosa que el producto es la tabla, el object es la instancia creada, all() te trae todos los valores de la tabla en comparativa al SQL seria este codigo:
+        Se desglosa que el producto es la tabla, all() te trae todos los valores de la tabla en comparativa al SQL seria este codigo:
             Select * from producto
     
     Producto.objects.filter(precio__gte=100):
-        Se desglosa que el produco es la tabla, el object es la instancia creada que viene siendo todas las columnas y filter es un filtro que le pasamos por parametro indicando que me traiga los productos que el precio sea igual a 100 en comparativa al SQL seria este codigo:
+        Se desglosa que el produco es la tabla, filter es un filtro que le pasamos por parametro indicando que me traiga los productos que el precio sea igual a 100 en comparativa al SQL seria este codigo:
             Select * from producto where precio__gte=100
     
     Producto.objetcs.get(id=1):
-        Se desglosa que el producto es la tabla, el objects la instancia y el get es para obtener el campo especifico en comparativa al SQL seria este codigo:
+        Se desglosa que el producto es la tabla, y el get es para obtener el campo especifico en comparativa al SQL seria este codigo:
             Select * from tabla where id=1
     
     Producto.objetcs.create(name='Mouse' precio=12.500):
