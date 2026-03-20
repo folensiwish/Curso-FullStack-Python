@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-5">
+        <div class="card border-danger shadow">
+            <div class="card-body text-center py-4">
+                <h3 class="text-danger mb-3">¿Estás seguro?</h3>
+                <p>Estás a punto de eliminar el libro: <br><strong>"{{ libro.titulo }}"</strong></p>
+                <hr>
+                <form method="POST">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger px-4">Sí, Eliminar</button>
+                    <a href="{% url 'listar_libros' %}" class="btn btn-secondary px-4">No, Volver</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
